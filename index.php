@@ -58,23 +58,60 @@ $faq = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     <header>
+        <div class="row p-2 px-3">
+            <div class="col-6">
+                <img src="Screenshot_27.png" alt="">
+            </div>
+            <div class="col-6 d-flex col-6 justify-content-end align-items-center">
+            <i class="fa-solid fa-bars mx-2"></i>
+            <button class="btn btn-primary">Accedi</button>
+            </div>
+        </div>
 
     </header>
     <main>
-        <div class="container px-5">
+        <div class="container pb-5">
             <?php foreach ($faq as $value) : ?>
-                <h3 class="title mt-4"><?= $value['title'] ?></h3>
+                <h3 class="titolo mt-4"><?= $value['title'] ?></h3>
                 <p class="mt-4"><?= $value['subtitle'] ?></p>
             <?php endforeach; ?>
         </div>
     </main>
     <footer>
-        
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-6">
+                    <ul class="d-flex mt-1">
+                        <li><a href="">Google</a></li>
+                        <li><a href="">Tutto su Google</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Termini</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 justify-content-end align-items-center d-flex">
+                <i class="fa-solid fa-message blue mx-3"></i>
+                    <select name="" id="">
+                        <option value="">Italiano</option>
+                        <option value="">English</option>
+                        <option value="">Spanish</option>
+                        <option value="">Français</option>
+                        <option value="">Turkish</option>
+                        <option value="">Portoghuese</option>
+                        <option value="">Cinese</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
@@ -84,7 +121,44 @@ p {
     font-size: 13px;
 }
 
-.title {
-    font-size: 15px
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+h3 {
+    font-size: 16px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: grey;
+}
+
+ol li {
+    font-size: 13px;
+    text-decoration: none;
+
+}
+
+footer {
+    background-color: #F5F5F5;
+    height: 40px
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: grey;
+    margin-right: 10px;
+}
+
+.blue {
+    color: #4BB5F8;
 }
 </style>
