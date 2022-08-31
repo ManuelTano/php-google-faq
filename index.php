@@ -77,6 +77,17 @@ $faq = [
             <button class="btn btn-primary">Accedi</button>
             </div>
         </div>
+        <div class="row  px-3">
+            <div class="col-6">
+                <ul class="d-flex bar">
+                    <li><a href="">Introduzione</a></li>
+                    <li><a href="">Norme sulla Privacy</a></li>
+                    <li><a href="">Termini di Servizio</a></li>
+                    <li><a href="">Tecnologie</a></li>
+                    <li><a href="">Domande frequenti</a></li>
+                </ul>
+            </div>
+        </div>
 
     </header>
     <main>
@@ -160,5 +171,25 @@ li a {
 
 .blue {
     color: #4BB5F8;
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+.bar li a {
+    font-size: 15px;
+    margin-right: 45px;
+    font-weight: bold;
+}
+
+.bar li a:hover {
+    color: #1B66C9;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #1B66C9;
+}
+
+header {
+    border-bottom: 1px solid lightgrey;
 }
 </style>
